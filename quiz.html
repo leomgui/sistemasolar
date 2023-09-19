@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sistema Solar</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Quiz sobre o sistema solar</h1>
+            <nav>
+                <ul>
+                    <li><a href="#pergunta1">Pergunta 1</a></li>
+                    <li><a href="#pergunta2">Pergunta 2</a></li>
+                    <li><a href="#pergunta3">Pergunta 3</a></li>
+                    <li><a href="#pergunta4">Pergunta 4</a></li>                    
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="pergunta1">
+                <h2>Pergunta 1:</h2>
+                <p><h3>Quantos planetas existem no sistema solar?</h3></p>
+                <form action="#">
+                    <input type="radio" id="sete" name="pergunta1" value="sete"><label for="sete">a) 7</label>
+                    <input type="radio" id="oito" name="pergunta1" value="oito"><label for="oito">b) 8</label>
+                    <input type="radio" id="nove" name="pergunta1" value="nove"><label for="nove">c) 9</label>
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+        
+            <section id="pergunta2">
+                <h2>Pergunta 2:</h2>
+                <p><h3>Quais desses planetas são gasosos? Selecione todas as opções corretas</h3></p>
+                <form action="#">
+                    <input type="checkbox" name="marte"><label for="marte">a) Marte</label>
+                    <input type="checkbox" name="jupter"><label for="jupter">b) Júpter</label>
+                    <input type="checkbox" name="venus"><label for="venus">c) Vênus</label>
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+
+            <section id="pergunta3">
+                <h2>Pergunta 3:</h2>
+                <p><h3>Qual é a maior lua de Saturno?</h3></p>
+                <form action="#">
+                    <select name="pergunta3">
+                        <option value="europa">Europa</option>
+                        <option value="tita">Titã</option>
+                        <option value="ganimedes">Lua de Ganimedes</option>
+                      </select>  
+                      <input type="submit" value="Enviar">
+                </form>
+            </section>
+
+            <section id="pergunta4">
+                <h2>Pergunta 4:</h2>
+                <p><h3>Em que ano a sonda Voyager 2 foi lançada para explorar os planetas do sistema solar?</h3></p>
+                <form action="#">
+                    <input type="range" name="pergunta4" min="1900" value="1950" max="2023" oninput="num.value = this.value">
+                    <output id="num">1950</output>
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>2023 Quiz Sistema Solar</p>
+        </footer>
+    </body>
+</html>
